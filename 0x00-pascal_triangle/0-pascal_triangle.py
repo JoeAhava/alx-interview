@@ -3,7 +3,11 @@
 returns a list of pascals series
 '''
 
-from math import factorial
+
+def factorial(n):
+    if(n <= 1):
+        return 1
+    return n * factorial(n - 1)
 
 
 def pascal_triangle(n):
