@@ -10,11 +10,8 @@ def rotate_2d_matrix(matrix):
   this rotates it
   '''
   n = len(matrix)
-  temp = matrix
+  # temp = matrix
   # result = []
   for parent, i in enumerate(matrix):
     for child, index in enumerate(matrix):
-      temp[i][index] = temp[index][i]
-  
-
-  return temp
+      matrix[i][index] = matrix[index][i]
